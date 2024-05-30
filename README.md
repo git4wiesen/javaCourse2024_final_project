@@ -9,7 +9,7 @@
 # Das Abschlussprojekt
 
 **Bearbeitungslänge:** 2 Wochen\
-**Finalisierung:** nicht fertig implementiert
+**Finalisierung:** nicht fertig implementiert\
 **Kurs-Abschluss:** Bestanden mit Zertifikat (100 von 100 Punkten)
 
 ## Lizenz: GPL v2
