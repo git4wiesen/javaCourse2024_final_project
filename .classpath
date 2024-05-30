@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/xerial_sqlite-connector-3.45.2.0/slf4j-api-1.7.36.jar"/>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/xerial_sqlite-connector-3.45.2.0/slf4j-nop-1.7.36.jar"/>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/xerial_sqlite-connector-3.45.2.0/sqlite-jdbc-3.45.2.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/mysql-connector-j-8.3.0/mysql-connector-j-8.3.0.jar"/>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/gson-2.10.1/gson-2.10.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/alfa/Desktop/libs/gson-2.10.1/gson-2.10.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/lib/javafx.base.jar" sourcepath="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://openjfx.io/javadoc/17/"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/lib/javafx.controls.jar" sourcepath="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://openjfx.io/javadoc/17/"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/lib/javafx.fxml.jar" sourcepath="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://openjfx.io/javadoc/17/"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/lib/javafx.graphics.jar" sourcepath="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://openjfx.io/javadoc/17/"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/lib/javafx.media.jar" sourcepath="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://openjfx.io/javadoc/17/"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/lib/javafx.swing.jar" sourcepath="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://openjfx.io/javadoc/17/"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/lib/javafx.web.jar" sourcepath="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://openjfx.io/javadoc/17/"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/lib/javafx-swt.jar" sourcepath="C:/Users/alfa/Desktop/libs/javafx-sdk-17.0.10/src.zip">
+		<attributes>
+			<attribute name="javadoc_location" value="https://openjfx.io/javadoc/17/"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/alfa/Desktop/libs/args4j-2.37/args4j-2.37.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/alfa/Desktop/libs/args4j-2.37/args4j-2.37-javadoc.jar!/"/>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

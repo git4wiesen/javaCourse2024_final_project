@@ -1,0 +1,126 @@
+/**
+ * Client/Server board game implementation, where 4/6 Players
+ * move each 4 figures from start to finish positions.
+ * 
+ * Copyright (C) 2024 Christian Alexander Wiesenäcker (Hessen, Germany) All rights reserved.
+ * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
+ * 
+ * This code is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License version 2 only, as
+ * published by the Free Software Foundation.  Oracle designates this
+ * particular file as subject to the "Classpath" exception as provided
+ * by Oracle in the LICENSE file that accompanied this code.
+ *
+ * This code is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+ * version 2 for more details (a copy is included in the LICENSE file that
+ * accompanied this code).
+ *
+ * You should have received a copy of the GNU General Public License version
+ * 2 along with this work; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+
+// ************************************************************
+// ***** CLIENT OPTIONS
+// ************************************************************
+
+Required:
+ -ui graphics
+ -brand-title "Mensch ärger dich nicht"
+ -brand-slogan "Mensch" "ärger" "dich" "nicht"
+ -player-key 1
+ -player-secret 2
+
+
+Command line options:
+
+	-ui (--user-interface) <UI>
+		Specifies, which user interface type shall be
+		used for user interaction
+
+		o For console:		console
+		o For graphics:		graphics
+
+	-brand-title (--brand-name-title) "<BRAND_TITLE_NAME>"
+		Specifies the brand title of the app, which will be displayed as the apps title
+
+		Default: "Rundenlauf mit herausschlagen"
+
+	-brand-slogan (--brand-slogan-board-text-parts) "<PART_1>" "<PART_2>" "<PART_3>" "<PART_4>"
+		Specifies a list of text parts, which will be displayed on the apps game board.
+		(Use at most 4 text parts)
+
+		Default: "Rundenlauf" "mit" "heraus-" "schlagen"
+
+
+// ***************************************************************************************************
+
+// ************************************************************
+// ***** SERVER OPTIONS
+// ************************************************************
+
+Required:
+ -ui graphics
+ -brand-title "Mensch ärger dich nicht"
+ -brand-slogan "Mensch" "ärger" "dich" "nicht"
+
+
+Command line options:
+
+	-ui (--user-interface) <UI>
+		Specifies, which user interface type shall be
+		used for user interaction
+
+		o For console:		console
+		o For graphics:		graphics
+
+	-brand-title (--brand-name-title) "<BRAND_TITLE_NAME>"
+		Specifies the brand title of the app, which will be displayed as the apps title
+
+		Default: "Rundenlauf mit herausschlagen"
+
+	-brand-slogan (--brand-slogan-board-text-parts) "<PART_1>" "<PART_2>" "<PART_3>" "<PART_4>"
+		Specifies a list of text parts, which will be displayed on the apps game board.
+		(Use at most 4 text parts)
+
+		Default: "Rundenlauf" "mit" "heraus-" "schlagen"
+
+	-db-prv (--database-provider) <DATABASE_PROVIDER>
+		The database provider to be used
+
+		o For SqLite file based database:		sqlite / sqlite_file / file
+		o For SqLite in-memory database:		sqlite_memory / memory
+		o For MySQL database:					mysql
+
+		Default: "sqlite_memory"
+
+	-db-host (--database-host) <HOST>
+		Host to connect the database to (only applies,
+		if --database-provider uses'mysql')
+
+		Default: "localhost"
+
+	-db-port (--database-port) <PORT>
+		Port to connect the database to (only applies,
+		if --database-provider uses 'mysql')
+
+		Default: 3306
+
+	-db-name (--database-name) <DATABASE_NAME>
+		The database provider to be used
+
+		Default: "runden_laufen_db"
+
+	--db-user (--database-username) "<DATABASE_USER>"
+		The database username to authenticate at the database (mysql only)
+
+		Default: "root"
+
+	--db-pw (--database-password) "<DATABASE_PASSWORD>"
+		The database password to authenticate at the database (mysql only)
+
+		Default: ""
+

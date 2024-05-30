@@ -1,0 +1,66 @@
+Server:
+
+ServerSocket lauscher = new ServerSocket(5678);
+Socket verbindung = lauscher.accept();
+new InputStreamReader(verbindung.getInputStream());
+
+
+Client:
+
+Socket clientVerbindung = new Socket("localhost",5678);
+
+
+/**
+  * Server sendet an Client ein: Hallo aus der netze-Welt.
+  *
+  * Hier ist es [aktuelle Zeit] Uhr.
+  *
+  * ServerSocket lauscher = new ServerSocket(5678);
+  */
+public class MeinServer {
+	public static void main(String[] args) throws IOException {
+	    int serverPort = 5678;
+		ServerSocket lauscher = new ServerSocket(5678);
+		System.out.println(LocalDateTime.now() + " - Server - lausche auf neue Verbindungen: server port = " + serverPort)
+		
+		while(true) {
+			Socket verbindung = lauscher.accept();
+			
+			System.out.println(LocalDateTime.now() + " - Server - ein Client hat sich verbunden: client IP/port = " + verbindung.getInetAddresse());
+			
+			OutputStream outputAnDenClient = verbindung.getOutputStream();
+			OutputStreamWriter zwischenDekorator = new OutputStreamWriter(outputAnDenClient);
+			BufferedWriter schreiber = new BufferedWriter(zwischenDekorator);
+
+			String nachricht = "Hallo aus der Netz-Welt, hier ist es " + LocalTime.now() + "\n";
+			System.out.println(LocalDateTime.now() + " - Server - sende Nachricht an den Client: nachricht = '" + nachricht + "'");			
+			schreiber.write(nachricht);
+			schreiber.flush();
+		}
+	}
+}
+
+
+/**
+  * Client verbindet sich mit Server und liest die Nachricht.
+  *
+  * Hier ist es [aktuelle Zeit] Uhr.
+  *
+  * Socket clientVerbindung = new Socket("localhost",5678);
+  */
+public class MeinClient {
+	public static void main(String[] args) throws IOException {
+	    String serverHost = "localhost";
+		int serverPort = 
+		Socket clientVerbindung = new Socket("localhost",5678);		
+		System.out.println(LocalDateTime.now() + " - Client - Starte eine Verbindung zum Server: server host = " + serverHost + ", server port = " + serverPort);
+		
+		InputStream inputVomServer = verbindung.getInputStream();
+		InputStreamReader zwischenDekorator = new InputStreamReader(inputVomServer);
+		BufferedReader leser = new BufferedReader(zwischenDekorator);
+		
+		System.out.println(LocalDateTime.now() + " - Client - Warte auf eine Nachricht vom Server...");
+		String textVomServer = leser.readLine();
+		System.out.println(LocalDateTime.now() + " - Client - Empfange Nachricht vom Server: " + textVomServer);
+	}
+}
